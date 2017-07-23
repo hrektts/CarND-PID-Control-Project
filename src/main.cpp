@@ -34,8 +34,7 @@ int main()
 
   PID pid;
   // TODO: Initialize the pid variable.
-  pid.Init(0.25, 0.04, 9., 2000);
-  //pid.Init(0.321, 0.061, 9.021, 2000);
+  pid.Init(0.25, 0.0005, 9, 2000);
 
   h.onMessage([&pid](uWS::WebSocket<uWS::SERVER> ws, char *data, size_t length, uWS::OpCode opCode) {
     // "42" at the start of the message means there's a websocket message event.
@@ -66,6 +65,7 @@ int main()
           } else if (steer_value > 1) {
               steer_value = 1;
           }
+          // Uncomment the line below to enable Twiddle
           //pid.Twiddle();
 
           // DEBUG
