@@ -38,8 +38,9 @@ observed. Then I increased the D component till the meandering was disappeared.
 These two processes were repeated multiple times to obtain the P and D components.
 I stopped this procedure when the car began to show abrupt behavior. After that,
 I adjusted the I component to keep the car running in the middle of the lane.
-As a result, I obtained the Kp, Ki and Kd as 0.25, 0.0005, 9, respectively.
+As a result, I obtained the Kp, Ki and Kd as 0.25, 0.0005 and 9, respectively.
 
 ### Twiddle
 
-Based on the result of manual tuning, I used the Twiddle algorithm to fine tune PID components. The algorithm determined the Kp, Ki and Kd as , respectively.
+Based on the result of manual tuning, I used the Twiddle algorithm to fine tune PID components. The algorithm determined the Kp, Ki and Kd as 0.2973, 0.04789 and 9.047,
+respectively.
